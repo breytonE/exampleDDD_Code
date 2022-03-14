@@ -12,4 +12,14 @@ class LocationFactoryTest {
         Location testLocation = LocationFactory.createLocation("Western Cape","South Africa");
         assertNotNull(testLocation);
     }
+
+    @Test
+    public void testLocationDetails(){
+        Location newLocation = new Location.Builder()
+                .setProvince("Limpopo")
+                .build();
+        System.out.println(newLocation.toString());
+        assertNotNull(newLocation);
+        //assertNull(newLocation);//fail test
+    }
 }
