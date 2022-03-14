@@ -72,7 +72,7 @@ public class Location {
         }
 
         public Location build(){
-            return new Location();
+            return new Location(this);
         }
     }
 }
